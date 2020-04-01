@@ -10,11 +10,13 @@
   "dependencies": {
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
+    "gatsby-plugin-canonical-urls": "^2.2.1",
     "gatsby-plugin-feed": "^2.3.29",
     "gatsby-plugin-google-analytics": "^2.1.38",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
+    "gatsby-plugin-s3": "^0.3.3",
     "gatsby-plugin-sharp": "^2.4.13",
     "gatsby-plugin-typography": "^2.3.25",
     "gatsby-remark-copy-linked-files": "^2.1.40",

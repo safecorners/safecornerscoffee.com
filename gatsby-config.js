@@ -1,3 +1,5 @@
+const siteAddress = new URL(`https://safecornerscoffee.com`);
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,
@@ -12,6 +14,20 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+          bucketName: "safecornerscoffee-blog",
+          protocol: siteAddress.protocol.slice(0, -1),
+          hostname: siteAddress.hostname,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+          siteUrl: siteAddress.href.slice(0, -1),
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
