@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - 13
+
+branches:
+  only:
+    - master
+
+cache: npm
+
+before_script:
+  - "npm run-script clean"
+script:
+  - "npm run-script build"
+
+notifications:
+  email:
+    recipients:
+      - safecorners.mobile@gmail.com
