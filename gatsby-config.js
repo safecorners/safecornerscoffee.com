@@ -2,13 +2,13 @@ const siteAddress = new URL(`https://safecornerscoffee.com`);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `safecorners coffeee`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `coffee`,
+      summary: `.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://safecornerscoffee.com/`,
     social: {
       twitter: `kylemathews`,
     },
@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-162142692-1`,
       },
     },
     `gatsby-plugin-feed`,
