@@ -291,6 +291,12 @@ S3 return 403 Error Code when Object doesn't exists.
 
 
 
+#### CloudFront Invaliation with Lambda
+
+
+
+
+
 
 
 Todo List:
@@ -310,24 +316,53 @@ Todo List:
 #### References
 
 - [Cloudfront serve static website](https://aws.amazon.com/ko/premiumsupport/knowledge-center/cloudfront-serve-static-website/)
+
 - [Website EndPoint](https://github.com/awsdocs/amazon-s3-developer-guide/blob/master/doc_source/WebsiteEndpoints.md)
 
 - [Key Differences Between a Website Endpoint and a REST API Endpoint](https://github.com/awsdocs/amazon-s3-developer-guide/blob/master/doc_source/WebsiteEndpoints.md#WebsiteRestEndpointDiff)
+
 - [Static website over https with S3, CloudFront, Gatsby — continuously delivered](https://itnext.io/static-website-over-https-with-s3-cloudfront-gatsby-continuously-delivered-b2b33bb7fa29)
+
 - [Deploy a static web application on AWS, the right way](https://medium.com/faktiva/deploy-a-static-website-on-aws-the-right-way-e83f47d60fdc)
+
 - [Building a static serverless website using S3 and CloudFront](https://sanderknape.com/2020/02/building-a-static-serverless-website-using-s3-cloudfront/)
+
 - [Lambda@Edge Using an Origin-Response Trigger to Update the Error Status Code to 200-OK](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-examples.html#lambda-examples-custom-error-static-body)
+
 - [Lambda@Edge Updating HTTP Responses in Origin-Response Triggers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-updating-http-responses.html)
+
 - [Hosting S3 Static Website using CloudFront with OAI](https://code.eidorian.com/aws/2020/02/08/cloudfront-s3-static-website-with-oai.html)
+
 - [Hosting a Gatsby site on S3 and CloudFront](https://www.ximedes.com/2018-04-23/deploying-gatsby-on-s3-and-cloudfront/)
+
 - [Setup HTTP Security headers in a S3 hosted website](https://johnlouros.com/blog/setup-security-headers-s3-host-website)
+
 - [AWS Lambda 개발자 가이드](https://docs.aws.amazon.com/ko_kr/lambda/index.html)
+
 - [CloudFront Lambda@Edge와 함께 AWS Lambda](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/lambda-edge.html)
+
 - [CloudFront Lambda@Edge 이벤트 구조](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/lambda-event-structure.html#lambda-event-structure-response)
+
 - [Lambda@Edge에 대한 IAM 권한 및 역할 설정](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-permissions.html)
+
 - [자습서: 간단한 Lambda@Edge 함수 생성](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-how-it-works-tutorial.html)
+
+- [Lambda@Edge 함수 예제](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/lambda-examples.html)
+
 - [cloudfront-s3-origin-website-redirects](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:646719517841:applications~cloudfront-s3-origin-website-redirects)
+
+- [AWS Lambda to invalidate CloudFront when S3 object changes](https://kupczynski.info/2019/01/09/invalidate-cloudfront-with-lambda-s3.html)
+
+- [Automatic Cloudfront invalidation with Amazon Lambda](https://blog.miguelangelnieto.net/posts/Automatic_Cloudfront_invalidation_with_Amazon_Lambda.html)
+
+- [How to Automatically Invalidate Dynamic Objects in Amazon CloudFront Using AWS Lambda](https://www.msp360.com/resources/blog/how-to-automatically-invalidate-dynamic-objects-in-amazon-cloudfront-using-aws-lambda/)
+
+- [Automatic CloudFront Invalidation for S3 Origins](https://rewind.io/blog/automatic-cloudfront-invalidation-for-s3-origins/)
+
 - [TravisCI S3 Deployment](https://docs.travis-ci.com/user/deployment/s3/)
 
 - [Gatsby Adding a Path Prefix](https://www.gatsbyjs.org/docs/path-prefix/)
 
+  
+
+# Automatic CloudFront Invalidation for S3 Origins
