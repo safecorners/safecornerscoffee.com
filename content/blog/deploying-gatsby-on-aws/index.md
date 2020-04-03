@@ -1,19 +1,19 @@
 ---
 title: Deploy Gatsby on AWS CloudFront and Lambda@Edge
-description: 
+date: 2020-04-03 
+description: 클라우드 프론트를 사용한 블로그 배포하기
 ---
+
+
 
 ### 1. Gatsby
 
 1. QuickStart
 
 ```bash
-gatsby new safecornerscoffee.com https://github.com/gatsbyjs/gatsby-starter-blog
+# Create a new Gatsby site using the Lumen starter
+gatsby new blog https://github.com/alxshelepenok/gatsby-starter-lumen
 ```
-
-2. Recommended Plugins
-   - gatsby-plugin-s3
-   - gatsby-plugin-canonical-urls
 
 
 
@@ -275,21 +275,35 @@ Updating Record Set Point to CloudFront ARN.
 
 
 
+#### 403, 404 Error Response Handling
+
+S3 return 403 Error Code when Object doesn't exists. 
+
+1. CloudFront > Target Distribution > Error Pages
+2. Add 403, 404 Error Response rediret to `/404.html`
 
 
-##### Google Analytics
+
+#### Google Analytics
 
 1. https://analytics.google.com/
 2. Settings > Tracking Information > Tracking ID
 
 
 
+
+
 Todo List:
 
-- [ ] 403, 404 Error Response Handling
-
+- [x] 403, 404 Error Response Handling
 - [ ] Gatsby Theme
 - [ ] Add Tag, Author Fields
+- [ ] Invalidate Caches After Deploying
+- [ ] Discuss
+- [ ] Recommending Posts
+
+- [ ] Security Response Headers
+- [ ] Add Prefix `/blog`
 
 
 

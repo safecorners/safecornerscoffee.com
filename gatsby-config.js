@@ -2,7 +2,7 @@ const siteAddress = new URL(`https://safecornerscoffee.com`);
 
 module.exports = {
   siteMetadata: {
-    title: `safecorners coffeee`,
+    title: `coffee@safecorners`,
     author: {
       name: `coffee`,
       summary: `.`,
