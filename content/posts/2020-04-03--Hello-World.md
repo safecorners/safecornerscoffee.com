@@ -2,7 +2,7 @@
 title: Hello World
 date: "2020-04-03"
 template: "post"
-draft: false
+draft: true
 slug: "hello-world"
 category: "AWS"
 tags:
