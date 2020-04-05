@@ -2,6 +2,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Header from '../components/Header';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
@@ -30,6 +31,7 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
+      <Header />
       <Page title={category}>
         <Feed edges={edges} />
         <Pagination

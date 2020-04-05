@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import Layout from '../components/Layout';
+import Header from '../components/Header';
 import Page from '../components/Page';
 import { useSiteMetadata, useCategoriesList } from '../hooks';
 
@@ -12,6 +13,7 @@ const CategoriesListTemplate = () => {
 
   return (
     <Layout title={`Categories - ${title}`} description={subtitle}>
+      <Header />
       <Page title="Categories">
         <ul>
           {categories.map((category) => (

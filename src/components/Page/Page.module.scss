@@ -2,10 +2,20 @@
 @import '../../assets/scss/mixins';
 
 .page {
+  max-width: $layout-post-single-width;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &__inner {
+    max-width: $layout-post-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include margin-bottom(2);
 
   &__inner {
-    padding: 25px 20px;
+    padding: 25px 0px;
   }
 
   &__title {
@@ -26,11 +36,11 @@
 
 @include breakpoint-sm {
   .page {
-    lost-column: 7/12;
+    // lost-column: 7/12;
 
-    &__inner {
-      padding: 30px 20px;
-    }
+    // &__inner {
+    //   padding: 30px 0px;
+    // }
 
   }
 
@@ -38,11 +48,11 @@
 
 @include breakpoint-md {
   .page {
-    lost-column: 2/3;
+    // lost-column: 2/3;
 
-    &__inner {
-      padding: 40px 35px;
-    }
+    // &__inner {
+    //   padding: 40px 0px;
+    // }
 
   }
 
