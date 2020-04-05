@@ -18,6 +18,45 @@
     @include margin-bottom(0)
   }
 
+ &__meta {
+    max-width: $layout-post-width;
+    margin-left: auto;
+    margin-right: auto;
+    &-time {
+      font-size: $typographic-small-font-size;
+      color: $color-base;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    &-divider {
+      margin: 0 5px;
+    }
+
+    &-tags {
+      &-link {
+        font-size: $typographic-small-font-size;
+        color: $color-secondary;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+          color: $color-primary;
+        }
+        &:after {
+          color: $color-base;
+          content: ", ";
+        }
+        &:last-child:after {
+          content: "";
+        }
+      }
+
+    }
+
+  }
+
   &__body {
     & figure {
       @include margin-bottom(1);
