@@ -2,6 +2,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
@@ -31,6 +32,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
+      <Header />
       <Page>
         <Feed edges={edges} />
         <Pagination

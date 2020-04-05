@@ -1,0 +1,55 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.header {
+
+  &__inner {
+    max-width: $layout-post-single-width;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    
+  }
+  
+  &__title {
+    max-width: $layout-post-width;
+    margin-left: auto;
+    margin-right: auto;
+    
+    a {
+      color: #808080;
+      font-family: $typographic-font-family;
+      font-weight: 600;
+      text-align: left;
+      font-size: $typographic-base-font-size * 1.6875;
+      // font-size: $typographic-base-font-size * 1.375;
+
+      @include line-height(1.5);
+      @include margin-top(2);
+      @include margin-bottom(.5);
+
+      &:hover,
+      &:focus {
+        color: #808080;
+      }
+
+    }
+
+  }
+
+}
+
+@include breakpoint-sm {
+  .header {
+
+  }
+
+}
+
+@include breakpoint-md {
+  .header {
+
+  }
+}
