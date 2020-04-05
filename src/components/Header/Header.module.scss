@@ -7,6 +7,7 @@
     max-width: $layout-post-single-width;
     padding: 0 15px;
     margin: 0 auto;
+    @include margin-top(1);
   }
 
   &__logo {
@@ -17,7 +18,7 @@
     max-width: $layout-post-width;
     margin-left: auto;
     margin-right: auto;
-    
+
     a {
       color: #808080;
       font-family: $typographic-font-family;
@@ -27,8 +28,6 @@
       // font-size: $typographic-base-font-size * 1.375;
 
       @include line-height(1.5);
-      @include margin-top(2);
-      @include margin-bottom(.5);
 
       &:hover,
       &:focus {
