@@ -20,11 +20,11 @@ const Content = ({ body, title ,date, tags, tagSlugs }: Props) => (
         {moment(date).format('MMMM D YYYY')}
       </time>
       <span className={styles['content__meta-divider']} />
-      <div className={styles['content__meta-tags']}>
+      <span className={styles['content__meta-tags']}>
         {tags && tags.map((tag, i) => (
           <Link to={tagSlugs[i]} className={styles['content__meta-tags-link']} key={tag}>{tag}</Link>
         ))}
-      </div>
+      </span>
     </div>
     <div className={styles['content__body']} dangerouslySetInnerHTML={{ __html: body }} />
   </div>
